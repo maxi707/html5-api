@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navi</title>
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
+    <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=12b526f4-1871-4137-9fa2-6cfa47023861&suggest_apikey=de0ece8e-a9e9-44c2-8b6f-945457910088&lang=ru_RU" type="text/javascript"></script>
+</head>
+
+<body>
+    <section id="greet" >
+        <div class="w3-animate-fading">
+        <h1>Рады вас видеть на нашем сайте "Проводник нашего города N"</h1>
+    </div>
+    
+    </section>
+    <section>
+       <div id="test_api"></div>
+    </section>
+    <section>
+        <div id="map" style="width: 800px; height: 600px">
+            <form id="markerForm">
+                <div id="location"></div>
+                <br>
+                <h3>Вы можете сохранить свою точку на карте</h3>
+                <br>
+                <input type="text" id="searchInput">
+                <button type="submit">Найти и добавить точку</button>
+                
+              </form>
+            <div id="DBinfo">
+                <button onclick="deleteMarkers()">Удалить базу точек</button>
+                
+            </div>  
+        </div>
+    </section>
+    
+
+</body>
+<script src="script.js"></script>
+  
+
+</html>
+
+
